@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+    <pattern>I need a Job</pattern>
+    <template>
+        What kind of Job do you want?
+        <button>
+            <text>Coding based</text>
+            <postback>Code</postback>
+        </button>
+        <button>
+            <text>Non-Coding based</text>
+            <postback>NoCode</postback>
+        </button>
+        <button>
+            <text>Networking</text>
+            <postback>Net</postback>
+        </button>
+        <button>
+            <text>OS development</text>
+            <postback>os</postback>
+        </button>
+        <button>
+            <text>AI</text>
+            <postback>AI</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Code</pattern>
+    <template>
+        Here are some related jobs for you to see<split/>
+    <button>
+        <text>Software Engineer</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Software Developer</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Web dev</text>
+        <postback>Company</postback>
+    </button>
+    
+    </template>
+ </category>   
+<category>
+    <pattern>NoCode</pattern>
+    <template>
+        Here are some related jobs for you to see<split/>
+    <button>
+        <text>Project manager</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>DevOps</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>IT Support Specalist</text>
+        <postback>Company</postback>
+    </button>
+    
+    </template>
+</category>
+
+<category>
+    <pattern>Networking</pattern>
+    <template>
+        Here are some related jobs for you to see<split/>
+    <button>
+        <text>CyberSecurity</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Network Manager</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Network Support</text>
+        <postback>Company</postback>
+    </button>
+    
+    </template>
+</category>
+
+<category>
+    <pattern>os</pattern>
+    <template>
+        Here are some related jobs for you to see<split/>
+    <button>
+        <text>Andriod</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>iOS</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Desktop</text>
+        <postback>Company</postback>
+    </button>
+    
+    </template>
+</category>
+<category>
+    <pattern>AI</pattern>
+    <template>
+        Here are some related jobs for you to see<split/>
+    <button>
+        <text>Machine Learning Engineer</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Artificial Intelligence Engineerr</text>
+        <postback>Company</postback>
+    </button>
+    
+    <button>
+        <text>Data Analyst</text>
+        <postback>Company</postback>
+    </button>
+    
+    </template>
+</category>
+
+<category>
+    <pattern>Company</pattern>
+    <template>
+        Checkout these company career websites<split/>
+    <ul>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>Microsoft</li>
+    </ul>
+    </template>
+</category>
+
+
+  <category>
+      <pattern>HELLO</pattern>
+      <template>
+          <random>
+              <li> Hello </li>
+              <li> Hi there! </li>
+              <li> Hola </li>
+              <li> Hey </li>
+              <li> Hi </li>
+          </random>
+      </template>
+  </category>
+  <category>
+      <pattern>HI</pattern>
+      <template><srai>HELLO</srai></template>
+  </category>
+ 
+  <category>
+      <pattern>What is your name</pattern>
+      <template>I am careerbot</template>
+  </category>
+  <category> \*random unknown qestion*/ 
+      <pattern>*</pattern>
+      <template><random>
+              <li> Sorry, I didnt understand </li>
+              <li> Error :404 </li>
+              <li> Try again after sometime </li>
+              <li> Please contact to your respective officer </li>
+          </random></template>
+  </category>
+  
+  <category>
+  <pattern>name</pattern> 
+  <template>
+    By day, I am a <bot name="careerbot"/>. At night, I crawl the internet looking for 
+    pictures of cool robots.
+  </template> 
+</category>
+
+<category>
+<pattern>KNOCK KNOCK</pattern>
+<template>Who is there?</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>WHO IS THERE</that>
+<template><person/> who?</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>* WHO</that>
+<template>Ha ha very funny, User.</template>
+</category>
+
+
+
+  
+</aiml>

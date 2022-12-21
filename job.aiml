@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	<button>
+<text>Tell Me More</text>
+<postback>xmoreabout foo</postback>
+</button>
+	
+	
+	
+	
+<category>
+	<pattern>JOB</pattern>
+	<template>Wait till I fetch you some jobs</template>
+</category>
+
+</aiml>
